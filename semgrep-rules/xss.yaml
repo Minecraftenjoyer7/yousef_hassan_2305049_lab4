@@ -1,0 +1,7 @@
+rules:
+  - id: xss-echo-request
+    message: XSS - Echoing user input without encoding
+    severity: WARNING
+    languages: [php]
+    pattern: |
+      echo $_REQUEST[...];

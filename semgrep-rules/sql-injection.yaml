@@ -1,0 +1,6 @@
+rules:
+  - id: detect-sql-patterns
+    message: Potential SQL injection patterns
+    severity: ERROR
+    languages: [php]
+    pattern-regex: 'SELECT.*\..*\$'
