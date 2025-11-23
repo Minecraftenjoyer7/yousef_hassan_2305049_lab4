@@ -1,0 +1,7 @@
+rules:
+  - id: file-inclusion-request
+    message: File Inclusion - User input used without validation
+    severity: ERROR
+    languages: [php]
+    pattern: |
+      $_REQUEST[...];
